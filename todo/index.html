@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1><span class="icon">📝</span> To-Do List</h1>
+    </header>
+    <section class="progress-card">
+      <div class="circle-container">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="bg" cx="60" cy="60" r="50"/>
+          <circle class="progress" cx="60" cy="60" r="50"/>
+        </svg>
+        <div class="circle-text" id="progress-value">0%</div>
+      </div>
+    </section>
+    <section class="task-input">
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <button onclick="addTask()">Add</button>
+    </section>
+    <ul id="task-list"></ul>
+  </div>
+
+  <!-- Fireworks container -->
+  <div id="fireworks"></div>
+</body>
+</html>

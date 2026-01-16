@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Alexa David</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: #f2f2f2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f8b400;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #f8b400;
+      font-weight: 600;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 100px 10%;
+      gap: 60px;
+    }
+
+    .contact-info,
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 1s forwards;
+    }
+
+    .contact-info {
+      animation-delay: 0.2s;
+      margin-top: 30px;
+    }
+
+    .contact-form {
+      animation-delay: 0.6s;
+    }
+
+    .contact-info h2 {
+      font-size: 36px;
+      color: #f8b400;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p,
+    .contact-info .info-group {
+      color: #ccc;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .contact-info h4 {
+      color: #f8b400;
+      margin-bottom: 6px;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #f8b400;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      color: #f2f2f2;
+      margin-right: 20px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #f8b400;
+    }
+
+    .contact-form {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.04);
+    }
+
+    .contact-form h3 {
+      color: #f8b400;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2a2a2a;
+      color: #f2f2f2;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+      color: #000;
+      background-color: #f8b400;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #fff176;
+      box-shadow: 0 0 12px rgba(248, 180, 0, 0.3);
+    }
+
+    .submit-btn:active {
+      background-color: #cc9500;
+      box-shadow: none;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 5%;
+      }
+
+      .contact-info,
+      .contact-form {
+        animation: none;
+        transform: none;
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ALEXA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or just to say hi!</p>
+
+      <div class="info-group">
+        <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+        <p>123 Street Name, Cyberpark, Calicut<br>Kerala, India - 673016</p>
+      </div>
+
+      <div class="info-group">
+        <h4><i class="fas fa-phone"></i> Phone</h4>
+        <p>+91-1234567890</p>
+      </div>
+
+      <div class="info-group">
+        <h4><i class="fas fa-envelope"></i> Email</h4>
+        <p>alexa@email.com</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Get in Touch</h3>
+      <form onsubmit="alert('Thanks for reaching out!'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Phone Number">
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

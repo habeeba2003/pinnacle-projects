@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Alexa David</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      padding: 15px 50px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f8b400;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+      font-weight: 400;
+    }
+
+    .nav-links li a:hover,
+    .nav-links a.active {
+      color: #f8b400;
+      font-weight: 600;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 60px 40px 80px;
+    }
+
+    .profile-image {
+      animation: fadeInLeft 1s ease-out forwards;
+      opacity: 0;
+      transform: translateX(-30px);
+      margin-top: -20px;
+      margin-left: 120px;
+    }
+
+    .profile-image img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(255, 193, 7, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-text {
+      max-width: 500px;
+      opacity: 0;
+      transform: translateX(30px);
+      animation: fadeInRight 1s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #f8b400;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-text ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .about-text ul li {
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f8b400;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      animation: pulse 1s infinite;
+      transform: scale(1.05);
+      background-color: #fff;
+      color: #000;
+    }
+
+    .btn:active {
+      animation: bounce 0.3s;
+    }
+
+    /* Animations */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(248, 180, 0, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(248, 180, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(248, 180, 0, 0); }
+    }
+
+    @keyframes bounce {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(0.95); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+      }
+
+      .profile-image {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">ALEXA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about">
+    <div class="profile-image">
+      <img src="images/profile.png" alt="Alexa David">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I'm Alexa David, a passionate Fullstack Web Developer based in India. I love crafting interactive, modern websites and applications that solve real-world problems. With experience in both frontend and backend technologies, I focus on delivering efficient and engaging web solutions that blend design and functionality seamlessly.</p>
+      <ul>
+        <li><strong>Birthday:</strong> Jan 1, 2000</li>
+        <li><strong>Email:</strong> alexa@gmail.com</li>
+        <li><strong>Phone:</strong> +91-1234567890</li>
+        <li><strong>Location:</strong> Kerala, India</li>
+      </ul>
+      <a href="cv/Alexa_David_CV.pdf" target="_blank" class="btn">View CV</a>
+    </div>
+  </section>
+
+</body>
+</html>

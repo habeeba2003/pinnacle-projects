@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alexa David Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      padding: 15px 50px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f8b400;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+      font-weight: 400;
+    }
+
+    .nav-links li a:hover,
+    .nav-links a.active {
+      color: #f8b400;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 60px;
+      padding: 120px 40px;
+    }
+
+    .profile-image {
+      opacity: 0;
+      transform: translateX(-30px);
+      animation: fadeInLeft 1s ease-out forwards;
+    }
+
+    .profile-image img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(255, 193, 7, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      max-width: 500px;
+      opacity: 0;
+      transform: translateX(30px);
+      animation: fadeInRight 1s ease-out forwards;
+      animation-delay: 0.4s;
+    }
+
+    .intro {
+      font-size: 24px;
+    }
+
+    .name {
+      font-size: 48px;
+      font-weight: bold;
+      color: #f8b400;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .role {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s, transform 0.3s;
+    }
+
+    .btn.primary {
+      background-color: #f8b400;
+      color: #000;
+    }
+
+    .btn.primary:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+
+    .btn.outline {
+      border: 2px solid #f8b400;
+      color: #f8b400;
+    }
+
+    .btn.outline:hover {
+      background-color: #f8b400;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      .profile-image img {
+        width: 240px;
+        height: 240px;
+      }
+
+      .content {
+        animation-delay: 0.2s;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ALEXA</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="profile-image">
+      <img src="images/profile.png" alt="Alexa David" />
+    </div>
+    <div class="content">
+      <span class="intro">Hi, I'm</span>
+      <span class="name">Alexa David</span>
+      <p class="role">Fullstack Web Developer</p>
+      <p class="description">
+        I build responsive websites and user-focused web applications using the latest web technologies.
+      </p>
+      <div class="buttons">
+        <a href="portfolio.html" class="btn primary">View Portfolio</a>
+        <a href="contact.html" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

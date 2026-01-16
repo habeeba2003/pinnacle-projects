@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Alexa David</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: #f2f2f2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f8b400;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #f8b400;
+      font-weight: 600;
+    }
+
+    .circular-skills {
+      padding: 80px 5% 60px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 44px;
+      color: #f8b400;
+      margin-bottom: 50px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .circular-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .circle-box {
+      width: 220px;
+      text-align: center;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .progress-ring {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: conic-gradient(#333 0%, #333 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      margin: auto;
+      position: relative;
+    }
+
+    .progress-ring::before {
+      content: '';
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      background: #0e0e0e;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .progress-ring i,
+    .progress-ring span {
+      position: relative;
+      z-index: 2;
+    }
+
+    .progress-ring i {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .circle-box h4 {
+      color: #f2f2f2;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    /* Color themes */
+    .red { --color: #e74c3c; }
+    .blue { --color: #3498db; }
+    .yellow { --color: #f1c40f; }
+    .green { --color: #2ecc71; }
+    .skyblue { --color: #1abc9c; }
+
+    @media (max-width: 768px) {
+      .circle-box {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .circle-box {
+        width: 100%;
+      }
+
+      .progress-ring {
+        width: 130px;
+        height: 130px;
+      }
+
+      .progress-ring::before {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">ALEXA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="circular-skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="circular-grid">
+
+      <div class="circle-box">
+        <div class="progress-ring red" data-percent="98">
+          <i class="fab fa-html5"></i>
+          <span>0%</span>
+        </div>
+        <h4>HTML</h4>
+      </div>
+
+      <div class="circle-box">
+        <div class="progress-ring blue" data-percent="94">
+          <i class="fab fa-css3-alt"></i>
+          <span>0%</span>
+        </div>
+        <h4>CSS</h4>
+      </div>
+
+      <div class="circle-box">
+        <div class="progress-ring yellow" data-percent="86">
+          <i class="fab fa-js-square"></i>
+          <span>0%</span>
+        </div>
+        <h4>JavaScript</h4>
+      </div>
+
+      <div class="circle-box">
+        <div class="progress-ring green" data-percent="80">
+          <i class="fab fa-node-js"></i>
+          <span>0%</span>
+        </div>
+        <h4>Node.js</h4>
+      </div>
+
+      <div class="circle-box">
+        <div class="progress-ring skyblue" data-percent="91">
+          <i class="fab fa-react"></i>
+          <span>0%</span>
+        </div>
+        <h4>React</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.progress-ring').forEach(ring => {
+        const span = ring.querySelector('span');
+        const percent = parseInt(ring.getAttribute('data-percent'));
+        let current = 0;
+
+        const interval = setInterval(() => {
+          if (current <= percent) {
+            span.textContent = current + "%";
+            ring.style.background = `conic-gradient(var(--color) ${current * 3.6}deg, #333 ${current * 3.6}deg)`;
+            current++;
+          } else {
+            clearInterval(interval);
+          }
+        }, 20);
+      });
+    });
+  </script>
+</body>
+</html>

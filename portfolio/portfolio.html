@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Alexa David</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: #f2f2f2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f8b400;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #f8b400;
+      font-weight: 600;
+    }
+
+    .portfolio {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 44px;
+      font-weight: 600;
+      color: #f8b400;
+      margin-bottom: 60px;
+    }
+
+    .portfolio-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .project-card {
+      background: #111;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      width: 300px;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s forwards;
+    }
+
+    .project-card:nth-child(1) { animation-delay: 0.2s; }
+    .project-card:nth-child(2) { animation-delay: 0.4s; }
+    .project-card:nth-child(3) { animation-delay: 0.6s; }
+    .project-card:nth-child(4) { animation-delay: 0.8s; }
+    .project-card:nth-child(5) { animation-delay: 1s; }
+    .project-card:nth-child(6) { animation-delay: 1.2s; }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .project-card h3 {
+      color: #f8b400;
+      font-size: 22px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .project-card p {
+      color: #ddd;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 0 15px rgba(248, 180, 0, 0.3);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .project-card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-card {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ALEXA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio">
+    <h2 class="section-title">My Works</h2>
+    <div class="portfolio-row">
+      <div class="project-card">
+        <img src="images/weather.png" alt="Weather App">
+        <h3>Weather App</h3>
+        <p>A real-time weather app with API integration and elegant UI.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/portfolio.jpg" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio with smooth animations and dark-themed layout.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/commerce.jpg" alt="E-Commerce Site">
+        <h3>E-Commerce Site</h3>
+        <p>Modern online shop built with React and Firebase.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/todo.jpg" alt="To-Do App">
+        <h3>To-Do App</h3>
+        <p>A simple task manager using JavaScript and local storage.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/chatapp.jpg" alt="Chat App">
+        <h3>Chat App</h3>
+        <p>A real-time chat app built with Node.js, Socket.io, and Express.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/blogsite.jpg" alt="Blog Website">
+        <h3>Blog Website</h3>
+        <p>A responsive blog platform using HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
