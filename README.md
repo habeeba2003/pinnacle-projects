@@ -1,17 +1,17 @@
-📁 Pinnacle Internship Projects
+📁 **Pinnacle Internship Projects**
 
 This repository contains multiple projects completed as part of my Internship at Pinnacle Labs.
 The projects include Web Development and Artificial Intelligence / Machine Learning applications, showcasing hands-on experience with frontend, backend, and ML-based systems.
 
 ------------------------------------------------------------------------------------------------
-👩‍💻 Intern Details
+👩‍💻** Intern Details**
   * Name: Habeeba Nisar
   * Course: MCA
   * Internship Domain: Web Development & Artificial Intelligence
   * Organization: Pinnacle Labs
 
 ------------------------------------------------------------------------------------------------
-📌 Projects Overview
+📌 **Projects Overview**
 
 🔹 Project 1: Personal Portfolio Website (Sample Project)
 
@@ -84,7 +84,7 @@ Key Learnings:
   End-to-end AI web application development
 
 ------------------------------------------------------------------------------------------------
-🛠️ Tools & Technologies
+🛠️ **Tools & Technologies**
 * Python
 * HTML, CSS, JavaScript
 * Flask
@@ -92,8 +92,9 @@ Key Learnings:
 * Scikit-learn
 * Git & GitHub
 * VS Code
-
-📌 Notes
+  
+------------------------------------------------------------------------------------------------
+📌 **Notes**
 This repository is maintained for internship evaluation, learning documentation, and future reference
 
 Commit history reflects continuous development and improvement of projects
