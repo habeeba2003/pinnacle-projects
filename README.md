@@ -4,7 +4,7 @@ This repository contains multiple projects completed as part of my Internship at
 The projects include Web Development and Artificial Intelligence / Machine Learning applications, showcasing hands-on experience with frontend, backend, and ML-based systems.
 
 ------------------------------------------------------------------------------------------------
-👩‍💻** Intern Details**
+👩‍💻 **Intern Details**
   * Name: Habeeba Nisar
   * Course: MCA
   * Internship Domain: Web Development & Artificial Intelligence
