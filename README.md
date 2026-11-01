@@ -76,6 +76,7 @@ Technologies Used:
   OpenCV
   HOG Feature Extraction
   HTML, CSS
+  REST APIs
 
 Key Learnings:
   Image preprocessing and feature extraction
